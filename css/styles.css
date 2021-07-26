@@ -543,6 +543,54 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff99;
 }
+.subscribe-form {
+  margin-left: 89px;
+}
+.subscribe-titel {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titel-hero-button);
+  padding-bottom: 20px;
+}
+.subscribe-mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: var(--background-color);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--titel-hero-button);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.subscribe-icon {
+  position: absolute;
+  margin-left: 10px;
+}
+.sybscribe-box {
+  display: flex;
+  justify-content: space-between;
+}
 /* Портфолио */
 .portfolio-btn {
   display: flex;
@@ -768,31 +816,66 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
 .modal-form-checkbox-label::before {
   content: '';
   display: block;
   width: 16px;
   height: 15px;
- border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
   border-radius: 4;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-right: 9px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   background-image: url('/imeges/bg/icon.jpg');
   border: 1px transparent;
-  box-shadow: none
-
+  box-shadow: none;
+}
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+  outline: 1px solid var(--accent-color);
+  border: none;
 }
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); IE6, IE7
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden; 
+  overflow: hidden;
+}
+.modal-form-label-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--titel-hero-button);
+  border: none;
 }
 .close {
   display: flex;

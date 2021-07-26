@@ -64,7 +64,7 @@
       <section class="section-advantages">
         <div class="container">
           <!--скрыть заголовок-->
-          <h2 hidden>Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages">
             <li class="advantages-list list">
               <div class="advantages-icon-container">
@@ -416,16 +416,28 @@
             </li>
           </ul>
         </div>
+        <!-- Form subckribe -->
+        <form action="#" class="subscribe-form">
+                    <p class="subscribe-titel">Подпишитесь на рассылку</p>
+          <div class="sybscribe-box"><input type="email" class="subscribe-mail" name="subscribe-mail" placeholder="E-mail">
+          <button class="subscribe-btn" >Подписаться 
+            <svg class="subscribe-icon" height="24px" width="24px">
+            <use href="./imeges/svg/svg.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+        </div>
+                </form>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+      <!-- Modal form -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>
           <svg class="close-icon" height="18px" width="18px">
             <use href="./imeges/svg/svg.svg#icon-Vector"></use>
           </svg>
         </button>
-        <form action="#" class="modal-form">
+              <form action="#" class="modal-form">
           <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
           <label class="modal-form-field"
             >Имя
@@ -462,12 +474,12 @@
           </label>
           <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept"/>
                     <label for="accept" class="modal-form-checkbox-label"> 
-            Соглашаюсь с рассылкой и принимаю
+            Соглашаюсь с рассылкой и принимаю&nbsp;
             <a href="" class="modal-form-label-link">Условия договора</a></label>
           <button class="modal-form-btn">Отправить</button>
         </form>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
