@@ -566,10 +566,6 @@ body {
   margin-right: 12px;
 }
 .subscribe-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 200px;
   height: 50px;
   font-weight: bold;
@@ -583,11 +579,17 @@ body {
   padding: 0;
   cursor: pointer;
 }
+.subscribe-btn-titel {
+  margin-right: 24px;
+}
 .subscribe-icon {
   position: absolute;
-  margin-left: 10px;
+  top: 50%;
+  right: 13px;
+  transform: translate(-50%, -50%);
 }
 .sybscribe-box {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
