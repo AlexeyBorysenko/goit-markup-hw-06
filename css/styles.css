@@ -840,7 +840,7 @@ body {
   margin-right: 9px;
 }
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url('/imeges/bg/icon.jpg');
+  background-image: url('../imeges/bg/icon.jpg');
   border: 1px transparent;
   box-shadow: none;
 }
